@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Autism Detection System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Autism Detection</h1>
+
+<div class="box">
+
+<h2>Signup</h2>
+<input id="su_user" placeholder="Username">
+<input id="su_pass" type="password" placeholder="Password">
+<button onclick="signup()">Signup</button>
+
+<h2>Login</h2>
+<input id="li_user" placeholder="Username">
+<input id="li_pass" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+</div>
+
+
+<div class="box">
+
+<h2>Upload Video + Questionnaire</h2>
+
+<input type="file" id="video">
+
+<p>Answer Questions (0-5)</p>
+
+<input id="q1" placeholder="Question 1 score">
+<input id="q2" placeholder="Question 2 score">
+<input id="q3" placeholder="Question 3 score">
+<input id="q4" placeholder="Question 4 score">
+<input id="q5" placeholder="Question 5 score">
+
+<button onclick="predict()">Submit</button>
+
+</div>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
